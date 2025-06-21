@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Orphic Solution
 
-## Getting Started
+Welcome to **Orphic Solution**!  
+Visit our website: [orphicsolution.com](https://orphicsolution.com/)
 
-First, run the development server:
+## About Us
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Orphic Solution is a leading provider of innovative web development, digital marketing, and IT solutions. We help businesses grow by delivering tailored digital services that drive results.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Services
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Web Development**  
+    Custom websites, e-commerce platforms, and web applications.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Digital Marketing**  
+    SEO, social media marketing, and online advertising to boost your online presence.
 
-## Learn More
+- **UI/UX Design**  
+    Modern, user-friendly designs for web and mobile platforms.
 
-To learn more about Next.js, take a look at the following resources:
+- **Branding**  
+    Logo design, brand strategy, and identity development.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **IT Consulting**  
+    Expert advice and solutions for your business technology needs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Why Choose Us?
 
-## Deploy on Vercel
+- Experienced and skilled team
+- Client-focused approach
+- Innovative and scalable solutions
+- Timely project delivery
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For inquiries or to start your project, visit [orphicsolution.com/contact](https://orphicsolution.com/contact) or email us at info@orphicsolution.com.
+
+---
+
+*Empowering your digital journey with creativity and technology.*
