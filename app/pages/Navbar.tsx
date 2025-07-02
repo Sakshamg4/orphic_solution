@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#1e1e1e] md:bg-[#f8f7f3] text-white md:text-gray-800 min-h-[70px] p-2 w-full">
+    <div className="bg-[#1e1e1e] md:bg-white text-white md:text-gray-800 min-h-[70px] p-2 w-full">
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex justify-between items-center w-full md:w-auto">
           <Image
@@ -92,12 +92,15 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
         <div className="hidden md:flex gap-4">
-          <button className="bg-transparent border-2 border-black cursor-pointer font-semibold text-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition duration-300">
+          <div className="relative flex items-center gap-2 px-4 py-2 cursor-pointer font-mono text-black hover:text-white hover:bg-black transition-colors duration-300 group">
+            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-r-[6px] border-r-black group-hover:border-r-white"></span>
             LOGIN
-          </button>
-          <button className="bg-black cursor-pointer font-semibold text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+            <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-black group-hover:border-l-white"></span>
+          </div>
+          <div className="relative flex items-center gap-2 px-8 py-2 cursor-pointer font-mono text-white bg-[#2e2e2e] hover:bg-black transition-colors duration-300 group">
+            <span className="absolute right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-white"></span>
             SIGN UP
-          </button>
+          </div>
         </div>
       </div>
     </div>
