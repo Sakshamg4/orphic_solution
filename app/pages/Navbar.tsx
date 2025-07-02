@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#f8f7f3] text-gray-800 min-h-[70px] p-2 w-full">
+    <div className="bg-[#1e1e1e] md:bg-[#f8f7f3] text-white md:text-gray-800 min-h-[70px] p-2 w-full">
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex justify-between items-center w-full md:w-auto">
           <Image
@@ -66,12 +66,12 @@ const Navbar: React.FC = () => {
         <ul
           className={`${
             isMobileMenuOpen ? "flex" : "hidden"
-          } md:flex flex-col rounded-md bg-[#d8d7d3] px-2 py-2 md:flex-row cursor-pointer gap-4 items-center w-full md:w-auto`}
+          } md:flex flex-col rounded-none md:rounded-md bg-[#1e1e1e] md:bg-[#d8d7d3] px-4 py-4 md:px-2 md:py-2 md:flex-row cursor-pointer gap-6 md:gap-4 items-start md:items-center w-full md:w-auto`}
         >
           {navbarData.map((item) => (
             <li
               key={item}
-              className="p-2 relative hover:bg-[#f8f7f3] rounded-md duration-300 w-full md:w-auto font-semibold text-center"
+              className="p-2 relative hover:bg-[#2e2e2e] md:hover:bg-[#f8f7f3] rounded-md duration-300 w-full md:w-auto font-semibold text-left md:text-center text-[#9b9b9b] md:text-current"
               onMouseEnter={() => item === "SERVICE" && setShowDropdown(true)}
               onMouseLeave={() => item === "SERVICE" && setShowDropdown(false)}
             >
@@ -91,9 +91,14 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
-        <button className="bg-black cursor-pointer font-semibold text-white px-4 py-2 rounded-md hover:bg-opacity-90">
-          CONTACT US
-        </button>
+        <div className="hidden md:flex gap-4">
+          <button className="bg-transparent border-2 border-black cursor-pointer font-semibold text-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition duration-300">
+            LOGIN
+          </button>
+          <button className="bg-black cursor-pointer font-semibold text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">
+            SIGN UP
+          </button>
+        </div>
       </div>
     </div>
   );
