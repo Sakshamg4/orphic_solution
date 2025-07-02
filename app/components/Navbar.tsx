@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#1e1e1e] md:bg-[#efeee9] text-white md:text-gray-800 min-h-[70px] p-2 w-full">
+    <div className="p-2 w-full">
       <div className="max-w-[1400px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex justify-between items-center w-full md:w-auto">
           <Image
@@ -91,17 +91,6 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className="hidden md:flex gap-8">
-          <div className="relative flex items-center gap-2 px-4 py-2 cursor-pointer font-bold font-mono text-black hover:text-[#181618b3] transition-colors duration-300 group">
-            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-r-[6px] border-r-black group-hover:border-r-[#181618b3]"></span>
-            LOGIN
-            <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-black group-hover:border-l-[#181618b3]"></span>
-          </div>
-          <div className="relative flex items-center gap-2 px-8 py-2 cursor-pointer font-bold font-mono rounded-md text-white bg-[#2e2e2e] hover:bg-[#181618cc] hover:text-[#2eff9b] transition-colors duration-300 group">
-            <span className="absolute right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-white"></span>
-            SIGN UP
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+.bg-noise-light {
+    background-image: url(/images/noise-light.svg)
+}
