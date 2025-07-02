@@ -24,8 +24,8 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#1e1e1e] md:bg-white text-white md:text-gray-800 min-h-[70px] p-2 w-full">
-      <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <div className="bg-[#1e1e1e] md:bg-[#efeee9] text-white md:text-gray-800 min-h-[70px] p-2 w-full">
+      <div className="max-w-[1400px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex justify-between items-center w-full md:w-auto">
           <Image
             src="https://orphicsolution.com/images/orphic1logo.png"
@@ -66,12 +66,12 @@ const Navbar: React.FC = () => {
         <ul
           className={`${
             isMobileMenuOpen ? "flex" : "hidden"
-          } md:flex flex-col rounded-none md:rounded-md bg-[#1e1e1e] md:bg-[#d8d7d3] px-4 py-4 md:px-2 md:py-2 md:flex-row cursor-pointer gap-6 md:gap-4 items-start md:items-center w-full md:w-auto`}
+          } md:flex flex-col rounded-none md:rounded-md bg-[#1e1e1e] md:bg-[#1816181a] px-4 py-4 md:px-2 md:py-2 md:flex-row cursor-pointer gap-6 md:gap-4 items-start md:items-center w-full md:w-auto`}
         >
           {navbarData.map((item) => (
             <li
               key={item}
-              className="p-2 relative hover:bg-[#2e2e2e] md:hover:bg-[#f8f7f3] rounded-md duration-300 w-full md:w-auto font-semibold text-left md:text-center text-[#9b9b9b] md:text-current"
+              className="p-2 relative hover:bg-[#2e2e2e] md:hover:bg-[#e6e5de] rounded-md duration-300 w-full md:w-auto font-semibold text-left md:text-center text-[#9b9b9b] md:text-current"
               onMouseEnter={() => item === "SERVICE" && setShowDropdown(true)}
               onMouseLeave={() => item === "SERVICE" && setShowDropdown(false)}
             >
@@ -91,13 +91,13 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className="hidden md:flex gap-4">
-          <div className="relative flex items-center gap-2 px-4 py-2 cursor-pointer font-mono text-black hover:text-white hover:bg-black transition-colors duration-300 group">
-            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-r-[6px] border-r-black group-hover:border-r-white"></span>
+        <div className="hidden md:flex gap-8">
+          <div className="relative flex items-center gap-2 px-4 py-2 cursor-pointer font-bold font-mono text-black hover:text-[#181618b3] transition-colors duration-300 group">
+            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-r-[6px] border-r-black group-hover:border-r-[#181618b3]"></span>
             LOGIN
-            <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-black group-hover:border-l-white"></span>
+            <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-black group-hover:border-l-[#181618b3]"></span>
           </div>
-          <div className="relative flex items-center gap-2 px-8 py-2 cursor-pointer font-mono text-white bg-[#2e2e2e] hover:bg-black transition-colors duration-300 group">
+          <div className="relative flex items-center gap-2 px-8 py-2 cursor-pointer font-bold font-mono rounded-md text-white bg-[#2e2e2e] hover:bg-[#181618cc] hover:text-[#2eff9b] transition-colors duration-300 group">
             <span className="absolute right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-white"></span>
             SIGN UP
           </div>
